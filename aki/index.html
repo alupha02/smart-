@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Restaurant - Home</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* HEADER */
+header{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* NAVIGATION */
+nav{
+    background:#34495e;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 20px;
+    display:inline-block;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#1abc9c;
+}
+
+/* LAYOUT */
+.container{
+    display:flex;
+    padding:20px;
+}
+
+/* MAIN CONTENT */
+main{
+    flex:3;
+    padding:20px;
+    background:white;
+    border-radius:8px;
+    margin-right:20px;
+}
+
+main img{
+    width:100%;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+/* SIDEBAR */
+aside{
+    flex:1;
+    background:white;
+    padding:15px;
+    border-radius:8px;
+}
+
+/* SLIDER */
+.slider{
+    width:100%;
+    height:200px;
+    overflow:hidden;
+    position:relative;
+}
+
+.slides{
+    display:flex;
+    width:300%;
+    animation:slide 9s infinite;
+}
+
+.slides img{
+    width:100%;
+}
+
+@keyframes slide{
+    0%{margin-left:0;}
+    33%{margin-left:0;}
+    40%{margin-left:-100%;}
+    73%{margin-left:-100%;}
+    80%{margin-left:-200%;}
+    100%{margin-left:-200%;}
+}
+
+/* FOOTER */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .container{
+        flex-direction:column;
+    }
+    main{
+        margin-right:0;
+        margin-bottom:20px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Smart Restaurant</h1>
+<p>Delicious & Fresh Food Everyday</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="register.html">Register</a>
+</nav>
+
+<div class="container">
+
+<main>
+<h2>Welcome to Smart Restaurant</h2>
+<p>We serve high-quality, delicious meals prepared by professional chefs. Experience the best taste in town with fresh ingredients and fast service.</p>
+<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Restaurant">
+</main>
+
+<aside>
+<h3>Popular Foods</h3>
+<div class="slider">
+<div class="slides">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+</div>
+</div>
+</aside>
+
+</div>
+
+<footer>
+<p>Contact: smartrestaurant@gmail.com | +250 788 000 000</p>
+</footer>
+
+</body>
+</html>
